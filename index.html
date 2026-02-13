@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeafyPines Audioworks | ACX Narrator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
         :root { 
             --forest-green: #228B22; 
@@ -16,7 +16,7 @@
             --black: #000000;
         }
         body { 
-            font-family: 'Georgia', serif; 
+            font-family: 'Libre Baskerville', serif; 
             background: url('pine-bg.jpg') no-repeat center/cover fixed, var(--beige); 
             color: var(--forest-green); 
             margin: 0; 
@@ -28,11 +28,11 @@
             color: var(--black); 
             text-align: center; 
             padding: 100px 20px; 
-            font-family: 'Playfair Display', serif; 
+            font-family: 'Libre Baskerville', serif; 
             display: flex; 
             align-items: center; 
             justify-content: center; 
-            gap: 20px; 
+            gap: 10px; 
             flex-wrap: wrap; 
         }
         .hero-logo { 
@@ -41,8 +41,10 @@
         }
         .hero-content { 
             text-align: left; 
+            color: var(--white);
         }
-        .hero h1 { font-size: 3em; margin: 0; font-weight: 700; }
+        .hero h1 { font-size: 3em; margin: 0; font-weight: 700; color: var(--white); }
+        .hero p { color: var(--white); }
         .grid { 
             display: grid; 
             grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
@@ -60,7 +62,7 @@
         }
         .card h2 { 
             color: var(--black); 
-            font-family: 'Playfair Display', serif; 
+            font-family: 'Libre Baskerville', serif; 
             margin-top: 0; 
         }
         .cta { 
@@ -69,7 +71,7 @@
             padding: 12px 24px; 
             border: none; 
             border-radius: 25px; 
-            font: 700 1.1rem 'Playfair Display', serif; 
+            font: 700 1.1rem 'Libre Baskerville', serif; 
             text-decoration: none; 
             display: inline-block; 
             margin-top: 10px; 
@@ -81,6 +83,7 @@
             background: var(--forest-green); 
             color: var(--white); 
             font-size: 0.9rem; 
+            font-family: 'Libre Baskerville', serif;
         }
         footer a { color: var(--light-green); }
         @media (max-width: 768px) { 
@@ -94,7 +97,7 @@
 </head>
 <body>
     <div class="hero">
-        <img src="generated-image31.png" alt="LeafyPines Logo" class="hero-logo">
+        <img src="generated-image3.png" alt="LeafyPines Logo" class="hero-logo">
         <div class="hero-content">
             <h1>LeafyPines Audioworks</h1>
             <p>Whispers from the Pines – ACX-approved, genre-versatile.</p>
