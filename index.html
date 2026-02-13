@@ -4,110 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LeafyPines | ACX Narrator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
     <style>
-        :root { 
-            --forest-green: #228B22; 
-            --light-green: #90EE90; 
-            --beige: #F5F5DC; 
-            --gold: #FFD700; 
-        }
         body { 
-            margin: 0; 
-            padding: 40px 20px; 
-            font-family: 'Georgia', serif; 
-            color: var(--forest-green); 
-            min-height: 100vh; 
-            background: 
-                linear-gradient(45deg, var(--light-green) 25%, transparent 25%), 
-                linear-gradient(-45deg, var(--light-green) 25%, transparent 25%), 
-                linear-gradient(45deg, transparent 75%, var(--forest-green) 75%), 
-                linear-gradient(-45deg, transparent 75%, var(--forest-green) 75%), 
-                var(--beige); 
-            background-size: 40px 40px; 
-            background-position: 0 0, 0 20px, 20px -20px, -20px 0px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-        }
-        .container { 
-            max-width: 900px; 
-            background: rgba(255,255,255,0.95); 
-            padding: 60px 40px; 
-            border-radius: 20px; 
-            box-shadow: 0 20px 40px rgba(34,139,34,0.2); 
-            text-align: center; 
-        }
-        .logo { 
-            height: 120px; 
-            margin-bottom: 20px; 
-            border-radius: 50%; 
-            border: 4px solid var(--gold); 
-        }
-        h1 { 
             font-family: 'Playfair Display', serif; 
-            font-size: 3.5em; 
-            color: var(--forest-green); 
-            margin: 0 0 10px; 
+            background: url('pine-bg.jpg') no-repeat center/cover fixed, #F5F5DC; 
+            color: #228B22; 
+            margin: 0; 
+            padding: 0; 
         }
-        .tagline { 
-            font-size: 1.4em; 
-            color: #666; 
-            margin: 0 0 30px; 
-            font-style: italic; 
+        .hero { 
+            background: rgba(34,139,34,0.8); 
+            color: white; 
+            text-align: center; 
+            padding: 100px 20px; 
         }
-        .cta { 
-            background: var(--gold); 
-            color: var(--forest-green); 
-            padding: 15px 40px; 
-            border-radius: 50px; 
-            font: 700 1.3em 'Playfair Display', serif; 
-            text-decoration: none; 
-            display: inline-block; 
-            box-shadow: 0 10px 20px rgba(255,215,0,0.3); 
-            margin: 20px 0; 
+        .hero h1 { font-size: 3em; margin: 0; }
+        .grid { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            gap: 20px; 
+            max-width: 1000px; 
+            margin: auto; 
+            padding: 40px 20px; 
         }
-        .demos { 
-            margin: 40px 0; 
-            text-align: left; 
+        .card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 15px; 
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
         }
-        audio { 
-            width: 100%; 
-            max-width: 500px; 
-            margin: 20px auto; 
-            display: block; 
-        }
-        .contact { 
-            margin-top: 40px; 
-            font-size: 1.1em; 
-        }
-        @media (max-width: 768px) { 
-            body { padding: 20px 10px; background-size: 30px 30px; } 
-            .container { padding: 40px 20px; } 
-            h1 { font-size: 2.5em; } 
-        }
+        audio { width: 100%; margin: 10px 0; }
+        @media (max-width: 768px) { .hero h1 { font-size: 2em; } .grid { grid-template-columns: 1fr; } }
     </style>
 </head>
 <body>
-    <div class="container">
-        <img src="logo.png" alt="LeafyPines" class="logo"> <!-- file:84 PNG -->
-        
-        <h1>🍃 LeafyPines</h1>
-        <p class="tagline">Whispers from the Pines – ACX Audiobook Narrator</p>
-        
-        <a href="mailto:leafy.pines@proton.me" class="cta">Audition Now</a>
-        
-        <div class="demos">
-            <h2 style="font-family:'Playfair Display';color:var(--forest-green);">Demo Reel</h2>
-            <audio controls>
-                <source src="demo.mp3" type="audio/mpeg">
-            </audio>
-            <p>Full fantasy narration sample | Palmetto, GA Studio</p>
+    <div class="hero">
+        <h1>🍃 LeafyPines Narration</h1>
+        <p>Where stories grow like ancient pines. ACX-approved, genre-versatile.</p>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <h2>Bio</h2>
+            <p>From Palmetto pines to narrated worlds, I bring warmth and depth to every audiobook. ACX producer seeking projects.</p>
         </div>
-        
-        <div class="contact">
-            <p><strong>leafy.pines@proton.me</strong><br>
-            <a href="https://acx.com/pt/profile" style="color:var(--forest-green);">ACX Profile</a> | LinkedIn</p>
+        <div class="card">
+            <h2>Reviews</h2>
+            <blockquote>"Engaging voice that pulls you in like a forest path."</blockquote>
+            <p>— Happy Author</p>
+        </div>
+        <div class="card">
+            <h2>Demos</h2>
+            <audio controls><source src="demo.mp3" type="audio/mpeg">Browser audio not supported.</audio>
+            <p>Fantasy sample | Add more players</p>
+        </div>
+        <div class="card">
+            <h2>Contact</h2>
+            <p>leafy.pines@proton.me<br>
+            <a href="https://acx.com/pt/profile?ri=yourid" target="_blank">[ACX Profile](https://acx.com)</a> | LinkedIn</p>
         </div>
     </div>
 </body>
