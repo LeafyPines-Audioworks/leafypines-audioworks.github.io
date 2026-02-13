@@ -6,131 +6,93 @@
     <title>LeafyPines | ACX Narrator</title>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Georgia&display=swap" rel="stylesheet">
     <style>
-        :root { 
-            --forest-green: #228B22; 
-            --light-green: #90EE90; 
-            --beige: #F5F5DC; 
-            --gold: #FFD700; 
-            --rust: #A52A2A; 
-            --white: #FFFFFF; 
-        }
         body { 
             font-family: 'Georgia', serif; 
-            background: url('pine-bg.jpg') no-repeat center/cover fixed, var(--beige); 
-            color: var(--forest-green); 
-            margin: 0; 
-            padding: 0; 
-            line-height: 1.6; 
+            max-width: 800px; 
+            margin: 40px auto; 
+            padding: 0 20px; 
+            line-height: 1.7; 
+            color: #333; 
+            background: #fff; 
         }
-        header { 
-            background: var(--forest-green); 
-            color: var(--white); 
-            text-align: center; 
-            padding: 20px; 
-        }
-        .logo { height: 80px; margin-bottom: 10px; } 
-        nav a { 
-            color: var(--white); 
-            margin: 0 15px; 
-            text-decoration: none; 
+        h1, h2 { 
             font-family: 'Playfair Display', serif; 
+            color: var(--forest-green, #228B22); 
         }
-        nav a:hover { color: var(--light-green); }
-        .hero { 
-            background: rgba(34,139,34,0.8); 
-            color: var(--white); 
-            text-align: center; 
-            padding: 100px 20px; 
-            font-family: 'Playfair Display', serif; 
+        strong { font-weight: bold; }
+        em { font-style: italic; }
+        blockquote { 
+            border-left: 4px solid var(--light-green, #90EE90); 
+            padding-left: 20px; 
+            font-style: italic; 
+            color: #666; 
         }
-        .hero h1 { font-size: 3em; margin: 0; font-weight: 700; }
-        .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-            gap: 20px; 
-            max-width: 1000px; 
-            margin: auto; 
-            padding: 40px 20px; 
+        pre { 
+            background: #f6f8fa; 
+            border-radius: 6px; 
+            padding: 16px; 
+            overflow-x: auto; 
+            font-family: 'Monaco', monospace; 
         }
-        .card { 
-            background: var(--white); 
-            padding: 20px; 
-            border-radius: 15px; 
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15); 
-            border-left: 5px solid var(--gold); 
+        code { 
+            background: #f6f8fa; 
+            padding: 2px 4px; 
+            border-radius: 3px; 
+            font-family: 'Monaco', monospace; 
         }
-        .card h2 { 
-            color: var(--forest-green); 
-            font-family: 'Playfair Display', serif; 
-            margin-top: 0; 
+        table { 
+            border-collapse: collapse; 
+            width: 100%; 
+            margin: 20px 0; 
         }
+        th, td { 
+            border: 1px solid #ddd; 
+            padding: 8px; 
+            text-align: left; 
+        }
+        th { background: var(--beige, #F5F5DC); }
+        .logo { height: 60px; margin-bottom: 20px; display: block; }
         .cta { 
-            background: var(--gold); 
-            color: var(--forest-green); 
-            padding: 12px 24px; 
-            border: none; 
-            border-radius: 25px; 
-            font: 700 1.1rem 'Playfair Display', serif; 
+            background: var(--gold, #FFD700); 
+            color: #228B22; 
+            padding: 10px 20px; 
             text-decoration: none; 
-            display: inline-block; 
-            margin-top: 10px; 
-        }
-        audio { width: 100%; margin: 10px 0; }
-        footer { 
-            text-align: center; 
-            padding: 20px; 
-            background: var(--forest-green); 
-            color: var(--white); 
-            font-size: 0.9rem; 
-        }
-        footer a { color: var(--light-green); }
-        @media (max-width: 768px) { 
-            .hero h1 { font-size: 2em; } 
-            .grid { grid-template-columns: 1fr; } 
+            border-radius: 5px; 
+            font-weight: bold; 
         }
     </style>
 </head>
 <body>
-    <header>
-        <img src="logo.png" alt="LeafyPines Logo" class="logo"> <!-- Upload file:84 as logo.png -->
-        <nav>
-            <a href="#bio">Bio</a>
-            <a href="#reviews">Reviews</a>
-            <a href="#demos">Demos</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <div class="hero">
-        <h1>🍃 LeafyPines Narration</h1>
-        <p>Whispers from the Pines – ACX-approved, genre-versatile.</p>
-        <a href="#contact" class="cta">Audition Now</a>
-    </div>
-    <div class="grid">
-        <div class="card" id="bio">
-            <h2>Bio</h2>
-            <p>From Palmetto pines to narrated worlds, I bring warmth and depth to every audiobook. ACX Narrator seeking projects.</p>
-        </div>
-        <div class="card" id="reviews">
-            <h2>Reviews</h2>
-            <blockquote>"Engaging voice that pulls you in like a forest path."</blockquote>
-            <p>— Happy Author</p>
-        </div>
-        <div class="card" id="demos">
-            <h2>Demos</h2>
-            <audio controls><source src="demo.mp3" type="audio/mpeg">Browser audio not supported.</audio>
-            <p>Fantasy sample | Add more players</p>
-        </div>
-        <div class="card" id="contact">
-            <h2>Contact</h2>
-            <p>leafy.pines@proton.me<br>
-            <a href="https://acx.com/pt/profile?ri=yourid" target="_blank">ACX Profile</a> | <a href="https://linkedin.com/in/leafypines" target="_blank">LinkedIn</a></p>
-            <a href="mailto:leafy.pines@proton.me" class="cta">Get Quote</a>
-        </div>
-    </div>
-    <footer>
-        &copy; 2026 LeafyPines Narration. Palmetto, GA. | 
-        <a href="mailto:leafy.pines@proton.me">Email</a> | 
-        <a href="https://acx.com">ACX</a>
-    </footer>
+    <img src="logo.png" alt="LeafyPines" class="logo"> <!-- Your file:84 -->
+    
+    <h1>🍃 LeafyPines Narration</h1>
+    <p>Text can be <strong>bold</strong>, <em>italic</em>, or ~~strikethrough~~.</p>
+    
+    <p>There should be whitespace between paragraphs.</p>
+    
+    <p>This is a <strong>normal paragraph</strong> following a header. LeafyPines is your ACX audiobook narrator in Palmetto, GA.</p>
+    
+    <h2>Sample Audio Demo</h2>
+    <audio controls style="width:100%;"><source src="demo.mp3" type="audio/mpeg"></audio>
+    
+    <blockquote>
+        When something is important enough, you do it even if the odds are not in your favor.
+    </blockquote>
+    
+    <pre><code>// Demo narration script
+var story = "Whispers from the pines...";
+console.log(story);</code></pre>
+    
+    <table>
+        <thead>
+            <tr><th>Genre</th><th>Sample</th><th>Length</th></tr>
+        </thead>
+        <tbody>
+            <tr><td>Fantasy</td><td><audio controls src="fantasy.mp3"></audio></td><td>5 min</td></tr>
+            <tr><td>Mystery</td><td>Nice</td><td>3 min</td></tr>
+        </tbody>
+    </table>
+    
+    <p><a href="mailto:leafy.pines@proton.me" class="cta">Contact for Auditions</a> | <a href="https://acx.com">ACX Profile</a></p>
 </body>
 </html>
