@@ -8,7 +8,6 @@
     <style>
         :root { 
             --forest-green: #228B22; 
-            --dark-green: #006400; 
             --light-green: #90EE90; 
             --beige: #F5F5DC; 
             --gold: #FFD700; 
@@ -18,14 +17,7 @@
         }
         body { 
             font-family: 'Libre Baskerville', serif; 
-            background: 
-                linear-gradient(to bottom, 
-                    var(--dark-green) 0%, 
-                    var(--forest-green) 30%, 
-                    rgba(245,245,220,0.6) 70%, 
-                    var(--beige) 100%
-                ),
-                url('Treebackground 1.png') no-repeat center/cover fixed;
+            background: url('pine-bg.jpg') no-repeat center/cover fixed, var(--beige); 
             color: var(--forest-green); 
             margin: 0; 
             padding: 0; 
@@ -120,11 +112,6 @@
             <h2>Reviews</h2>
             <blockquote>"Engaging voice that pulls you in like a forest path."</blockquote>
             <p>— Happy Author</p>
-        </div>
-        <div class="card" id="demos">
-            <h2>Demos</h2>
-            <audio controls><source src="demo.mp3" type="audio/mpeg">Browser audio not supported.</audio>
-            <p>Fantasy sample | Add more players</p>
         </div>
         <div class="card" id="contact">
             <h2>Contact</h2>
