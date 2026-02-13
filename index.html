@@ -17,7 +17,15 @@
         }
         body { 
             font-family: 'Libre Baskerville', serif; 
-            background: url('pine-bg.jpg') no-repeat center/cover fixed, var(--beige); 
+            background: 
+                linear-gradient(to bottom, 
+                    rgba(34,139,34,0.8) 0%, 
+                    rgba(34,139,34,0.4) 30%, 
+                    rgba(245,245,220,0.3) 60%, 
+                    var(--beige) 80%
+                ),
+                url('Treebackground 1.png') no-repeat center/cover fixed,
+                var(--beige);
             color: var(--forest-green); 
             margin: 0; 
             padding: 0; 
@@ -112,6 +120,11 @@
             <h2>Reviews</h2>
             <blockquote>"Engaging voice that pulls you in like a forest path."</blockquote>
             <p>— Happy Author</p>
+        </div>
+        <div class="card" id="demos">
+            <h2>Demos</h2>
+            <audio controls><source src="demo.mp3" type="audio/mpeg">Browser audio not supported.</audio>
+            <p>Fantasy sample | Add more players</p>
         </div>
         <div class="card" id="contact">
             <h2>Contact</h2>
